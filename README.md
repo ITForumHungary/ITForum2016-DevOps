@@ -1,2 +1,2 @@
-# ITForum2016-DevOps
-his repository contains all the presentations, code, demos and all conference materials from ITForum 2016 DevOps track.
+# Disclaimer
+This repository contains all the presentations, code, demos and all conference materials from ITForum 2016 DevOps track.
