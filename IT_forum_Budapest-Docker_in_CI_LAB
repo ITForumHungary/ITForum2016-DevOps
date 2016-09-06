@@ -54,7 +54,7 @@ $ docker diff <container id>
 $ docker history my_busybox:v2
 $ docker rm <container id>
 $ docker images |grep busybox
-!! NOTICE: there is all the 10KB layers inside !!
+!! NOTICE: there are all the 10KB layers inside !!
 $ docker run -d my_busybox:v2 /bin/sh -c "while true; do sleep 5000; done"
 <container id># ls /
 !! NOTICE: there is only FILE2
