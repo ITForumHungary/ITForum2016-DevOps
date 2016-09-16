@@ -33,3 +33,4 @@ szolgáltatással is.
 ## Hasznos anyagok a témában
 
 - [DevOps: Where do I start ? Cheat Sheet](https://blogs.technet.microsoft.com/juliens/2016/02/14/devops-where-do-i-start-cheat-sheet/)
+
