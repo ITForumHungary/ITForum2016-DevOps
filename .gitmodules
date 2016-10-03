@@ -1,0 +1,3 @@
+[submodule "Session3-OS_to_cloud_platform-Basics_of_Apache_Mesos_based_DCOS/dcos-examples"]
+	path = Session3-OS_to_cloud_platform-Basics_of_Apache_Mesos_based_DCOS/dcos-examples
+	url = https://github.com/popnam/dcos-examples.git
