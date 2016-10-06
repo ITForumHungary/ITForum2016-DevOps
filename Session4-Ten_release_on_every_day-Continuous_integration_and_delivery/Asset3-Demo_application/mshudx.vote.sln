@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mshudx.Vote.Worker", "src\mshudx.vote.worker\Mshudx.Vote.Worker.xproj", "{C7466301-0BE9-4085-8DCB-F138D0203B8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{534129BC-6FB7-4EE1-86B7-62C15ACA77A0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mshudx.Vote.Web", "src\mshudx.vote.web\Mshudx.Vote.Web.xproj", "{10054D04-7740-4011-B40F-543B7E6CD42D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF49F05F-8F3D-4EED-B8DA-E4445D0D81AD}"
+	ProjectSection(SolutionItems) = preProject
+		buildagent.json = buildagent.json
+		global.json = global.json
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		__JSONSchema = https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mshudx.Vote.Results", "src\mshudx.vote.results\Mshudx.Vote.Results.xproj", "{3EAF52A7-4A59-4BDE-AD67-3E021002DFAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7466301-0BE9-4085-8DCB-F138D0203B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7466301-0BE9-4085-8DCB-F138D0203B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7466301-0BE9-4085-8DCB-F138D0203B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7466301-0BE9-4085-8DCB-F138D0203B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10054D04-7740-4011-B40F-543B7E6CD42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10054D04-7740-4011-B40F-543B7E6CD42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10054D04-7740-4011-B40F-543B7E6CD42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10054D04-7740-4011-B40F-543B7E6CD42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EAF52A7-4A59-4BDE-AD67-3E021002DFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EAF52A7-4A59-4BDE-AD67-3E021002DFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EAF52A7-4A59-4BDE-AD67-3E021002DFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EAF52A7-4A59-4BDE-AD67-3E021002DFAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7466301-0BE9-4085-8DCB-F138D0203B8A} = {534129BC-6FB7-4EE1-86B7-62C15ACA77A0}
+		{10054D04-7740-4011-B40F-543B7E6CD42D} = {534129BC-6FB7-4EE1-86B7-62C15ACA77A0}
+		{3EAF52A7-4A59-4BDE-AD67-3E021002DFAC} = {534129BC-6FB7-4EE1-86B7-62C15ACA77A0}
+	EndGlobalSection
+EndGlobal

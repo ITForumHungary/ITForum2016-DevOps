@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Mshudx.Vote.Worker": {
+      "commandName": "Project"
+    },
+    "Docker": {}
+  }
+}

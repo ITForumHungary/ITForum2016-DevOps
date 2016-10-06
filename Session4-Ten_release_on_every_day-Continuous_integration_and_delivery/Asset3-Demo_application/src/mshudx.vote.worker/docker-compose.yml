@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  mshudx.vote.worker:
+    image: user/mshudx.vote.worker${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    external_links:
+      - postgres
+      - redis
+networks:
+  default:
+    external:
+      name: vote-dev

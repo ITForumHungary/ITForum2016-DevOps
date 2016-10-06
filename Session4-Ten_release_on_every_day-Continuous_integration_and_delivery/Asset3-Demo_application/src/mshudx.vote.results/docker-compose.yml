@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  mshudx.vote.results:
+    image: user/mshudx.vote.results${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5000"
+    external_links:
+      - postgres
+networks:
+  default:
+    external:
+      name: vote-dev
