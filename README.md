@@ -2,6 +2,10 @@
 
 Itt találhatod a szekció előadásaihoz kapcsolódó prezentációkat, minta kódokat és kódrészleteket.
 
+## Keynote
+
+[Demo script](../blob/master/Keynote_Demo.md)
+
 ## Előadások
 
 ### DevOps eszközök alapja: kódból infrastruktúrát
