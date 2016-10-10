@@ -1,0 +1,28 @@
+{
+  "id": "/postgres",
+  "cpus": 0.2,
+  "mem": 128,
+  "disk": 128,
+  "instances": 1,
+  "healthChecks": [
+            {
+              "protocol": "TCP",
+              "path": "/",
+              "gracePeriodSeconds": 5,
+              "intervalSeconds": 5,
+              "timeoutSeconds": 20,
+              "maxConsecutiveFailures": 3,
+              "port": 5432,
+              "ignoreHttp1xx": false
+            }
+          ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "postgres",
+      "network": "HOST",
+      "privileged": false,
+      "forcePullImage": false
+    }
+  }
+}

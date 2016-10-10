@@ -1,0 +1,30 @@
+{
+  "id": "/mshudx-vote-web",
+  "cpus": 0.2,
+  "mem": 128,
+  "instances": 1,
+  "acceptedResourceRoles": [
+    "slave_public"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "ersekattila/mshudx.vote.web:94",
+      "network": "HOST",
+      "privileged": false,
+      "forcePullImage": false
+    }
+  },
+  "healthChecks": [
+    {
+      "path": "/app",
+      "protocol": "HTTP",
+      "gracePeriodSeconds": 5,
+      "intervalSeconds": 5,
+      "timeoutSeconds": 20,
+      "maxConsecutiveFailures": 3,
+      "ignoreHttp1xx": false,
+      "port": 5000
+    }
+  ]
+}

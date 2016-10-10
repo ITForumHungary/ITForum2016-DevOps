@@ -1,0 +1,39 @@
+{
+  "id": "/mshudx-vote-results",
+  "cpus": 0.2,
+  "mem": 128,
+  "instances": 1,
+  "acceptedResourceRoles": [
+    "slave_public"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "ersekattila/mshudx.vote.results:94",
+      "network": "BRIDGE",
+      "portMappings": [
+                {
+                  "containerPort": 5000,
+                  "protocol": "tcp",
+                  "name": "web",
+                  "servicePort": 5000,
+                  "hostPort": 5001
+                }
+              ],
+      "privileged": false,
+      "forcePullImage": false
+    }
+  },
+  "healthChecks": [
+    {
+      "path": "/",
+      "protocol": "HTTP",
+      "gracePeriodSeconds": 5,
+      "intervalSeconds": 5,
+      "timeoutSeconds": 20,
+      "maxConsecutiveFailures": 3,
+      "ignoreHttp1xx": false,
+      "port": 5001
+    }
+  ]
+}
