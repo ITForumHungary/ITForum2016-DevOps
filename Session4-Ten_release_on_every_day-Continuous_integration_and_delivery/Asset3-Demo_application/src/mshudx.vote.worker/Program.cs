@@ -18,9 +18,9 @@ namespace Mshudx.Vote.Worker
         {
             var config = new ConfigurationBuilder()
                .AddCommandLine(args)
-               .AddEnvironmentVariables(prefix: "MSHUDXVOTE_")
                .SetBasePath(Directory.GetCurrentDirectory())
                .AddJsonFile("appsettings.json", false)
+               .AddEnvironmentVariables()
                .Build();
 
             var pgsqlConnectionString = config.GetConnectionString("pgsql");
@@ -75,12 +75,12 @@ namespace Mshudx.Vote.Worker
                 }
                 catch (SocketException e) when (retry > 0)
                 {
-                    Console.Error.WriteLine($"Connecting to ppgsql failed with {e.Message}. Retrying.");
+                    Console.Error.WriteLine($"Connecting to pgsql {connectionString} failed with {e.Message}. Retrying.");
                     await Task.Delay(1000);
                 }
                 catch (DbException e) when (retry > 0)
                 {
-                    Console.Error.WriteLine($"Connecting to pgsql failed with {e.Message}. Retrying.");
+                    Console.Error.WriteLine($"Connecting to pgsql {connectionString} failed with {e.Message}. Retrying.");
                     await Task.Delay(1000);
                 }
                 retry--;
@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS votesummary (
                 }
                 catch (RedisConnectionException e) when (retry > 0)
                 {
-                    Console.Error.WriteLine($"Connecting to redis failed with {e.Message}. Retrying.");
+                    Console.Error.WriteLine($"Connecting to redis {hostname} failed with {e.Message}. Retrying.");
                     await Task.Delay(1000);
                 }
                 retry--;

@@ -11,8 +11,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mshudx.Vote.Web", "src\mshu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF49F05F-8F3D-4EED-B8DA-E4445D0D81AD}"
 	ProjectSection(SolutionItems) = preProject
-		buildagent.json = buildagent.json
 		global.json = global.json
+		setupEnvironment.ps1 = setupEnvironment.ps1
 	EndProjectSection
 	ProjectSection(FolderGlobals) = preProject
 		__JSONSchema = https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json
