@@ -1,5 +1,7 @@
 note: Windows 10 is not (yet) supported!
 
 docker run -p 1433:1433 --env sa_password="ItfDemo!2016" microsoft/mssql-server-2016-express-windows
+docker run -p 80:80 microsoft/iis
+
 C:\Program Files\Microsoft SQL Server\130\Tools\Binn\osql.exe
 
