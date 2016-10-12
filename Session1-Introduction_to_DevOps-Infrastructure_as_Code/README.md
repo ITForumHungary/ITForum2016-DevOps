@@ -9,13 +9,13 @@ az Azure erőforrássablonok és keresztplatformos parancssori eszközök segít
 
 ## Előadás demo anyagok
 
-* [Üres sablon](Session1-Introduction_to_DevOps-Infrastructure_as_Code/empty.json)
+* [Üres sablon](empty.json)
 * Meglévő erőforrások sablonjának exportálása Azure portálon
 * [Azure quickstart galéria](https://github.com/Azure/azure-quickstart-templates)
 * [armviz.io](http://armviz.io/)
 
 Demo környezet:
-![demo environment](Session1-Introduction_to_DevOps-Infrastructure_as_Code/customscript.png)
+![demo environment](customscript.png)
 
 ## Eszközök és hasznos anyagok
 
