@@ -4,7 +4,7 @@ Itt találhatod a szekció előadásaihoz kapcsolódó prezentációkat, minta k
 
 ## Keynote
 
-[Demo script](../Keynote_Demo.md)
+[Demo script](Keynote_Demo.md)
 
 ## Előadások
 
